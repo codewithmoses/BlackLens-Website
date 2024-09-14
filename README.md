@@ -19,7 +19,7 @@ The site includes:
 1. **Download the Repository**:
    Clone or download the repository to your local machine:
    ```bash
-   git clone https://github.com/YourRepo/BlackLensPhotography.git
+   git clone [https://github.com/YourRepo/BlackLensPhotography.git](https://github.com/codewithmoses/BlackLens-Website.git)
    ```
 
 2. **File Structure**:
