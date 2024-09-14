@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="Ethan Carter" />
+
+    <!-- Title Tag -->
+    <title>Ethan Carter - Professional Photographer Portfolio</title>
+
+    <!-- Description -->
+    <meta
+      name="description"
+      content="Ethan Carter is a professional photographer specializing in wedding, portrait, event, and commercial photography. Explore my portfolio to see artistic and timeless work that captures life's most meaningful moments."
+    />
+
+    <!-- Keywords -->
+    <meta
+      name="keywords"
+      content="photographer, wedding photography, portrait photography, event photography, commercial photography, professional photography, photography portfolio, Ethan Carter"
+    />
+
+    <!-- Open Graph Meta Tags (for social media sharing) -->
+    <meta
+      property="og:title"
+      content="Ethan Carter - Professional Photographer Portfolio"
+    />
+    <meta
+      property="og:description"
+      content="Explore the photography portfolio of Ethan Carter, featuring wedding, portrait, event, and commercial photography. Creating timeless and artistic images."
+    />
+    <meta property="og:image" content="img/ethan-carter-og-image.jpg" />
+    <!-- Replace with the path to your Open Graph image -->
+    <meta property="og:url" content="https://your-portfolio-website.com" />
+    <!-- Replace with your portfolio URL -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:site_name"
+      content="Ethan Carter Photography Portfolio"
+    />
+
+    <!-- Favicon link -->
+    <link rel="shortcut icon" href="img/favicon.svg" type="image/svg+xml" />
+
+    <!-- DevIcon CDN -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
+    <!-- Google Merriweather & Inconsolata Font CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Tailwind TW Element CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/tw-elements/css/tw-elements.min.css"
+    />
+    <script src="https://cdn.tailwindcss.com/3.3.0"></script>
+    <!-- Tailwind Config -->
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          fontFamily: {
+            merri: ["Merriweather", "serif"],
+            mono: ["Inconsolata", "monospace"],
+          },
+        },
+        corePlugins: {
+          preflight: false,
+        },
+      };
+    </script>
+  </head>
+  <body class="font-mono">
+    <!-- Header-|- Navbar section -->
+    <header class="">
+      <nav class="bg-black  text-white border-zinc-700 px-4 lg:px-6 py-2.5">
+        <div
+          class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl"
+        >
+          <a href="https://flowbite.com" class="flex items-center">
+            <img
+              src="img/logo.svg"
+              class="mr-3 h-12 sm:h-12"
+              alt="BlackLens Photography Logo"
+            />
+          </a>
+          <div class="flex items-center lg:order-2">
+            <!-- Resume Button (unchanged) -->
+            <a
+              href="#"
+              class="inline-block rounded bg-white px-6 pb-2 pt-2.5 text-xs font-medium leading-normal text-black shadow-light-3 transition duration-150 ease-in-out hover:bg-white/90 hover:shadow-light-2 focus:bg-white/90 focus:shadow-light-2 focus:outline-none focus:ring-0 active:bg-white/90 active:shadow-light-2 motion-reduce:transition-none"
+            >
+              <i class="fa-solid fa-cloud-arrow-down mr-2"></i> Resume
+            </a>
+            <a
+              href="/"
+              class="ml-4 text-zinc-400 transition-colors duration-300 hover:text-zinc-200"
+            >
+            <i class="fab fa-github text-xl"></i>
+            </a>
+            <!-- Hamburger menu button -->
+            <button
+              data-collapse-toggle="mobile-menu-2"
+              type="button"
+              class="ml-2 inline-flex items-center p-1 ml-1 text-sm rounded lg:hidden hover:bg-zinc-900 focus:outline-none focus:ring-2 focus:ring-zinc-100"
+            >
+              <span class="sr-only">Open main menu</span>
+              <img
+                src="img/CLose-Muen.svg"
+                alt="CLose-Menu"
+                id="close-menu"
+                class="hidden w-6 h-6 p-[4px]"
+              />
+              <img
+                src="img/lens-menu.svg"
+                alt="Open-Menu"
+                id="open-menu"
+                class="w-6 h-6"
+              />
+            </button>
+          </div>
+          <div
+            class="hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1"
+            id="mobile-menu-2"
+          >
+            <ul
+              class="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0"
+            >
+              <li>
+                <a
+                  href="#home"
+                  class="block py-2 pr-4 pl-3 text-white hover:text-zinc-400"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#about"
+                  class="block py-2 pr-4 pl-3 text-white hover:text-zinc-400"
+                  >About Me</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#services"
+                  class="block py-2 pr-4 pl-3 text-white hover:text-zinc-400"
+                  >Services</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#portfolio"
+                  class="block py-2 pr-4 pl-3 text-white hover:text-zinc-400"
+                  >Portfolio</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#clients"
+                  class="block py-2 pr-4 pl-3 text-white hover:text-zinc-400"
+                  >Testimonials</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#contact"
+                  class="block py-2 pr-4 pl-3 text-white hover:text-zinc-400"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Header-|- Navbar section Ends -->
+    <!-- Site Content | Hero Section -->
+    <section class="bg-black f-screen" id="home">
+      <div
+        class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20 bg-black"
+      >
+        <div class="grid gap-10 lg:grid-cols-2">
+          <div class="flex flex-col justify-center md:pr-8 xl:pr-0 lg:max-w-lg">
+            <div
+              class="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-zinc-700"
+            >
+              <img src="./img/hero icon.svg" alt="" class="w-24 h-24" />
+            </div>
+            <div class="max-w-xl mb-6">
+              <h2
+                class="max-w-lg mb-6 font-sans text-5xl font-bold tracking-tight text-white sm:text-5xl sm:leading-none font-merri"
+              >
+                Capturing Timeless Moments<br class="hidden md:block" />
+                One <span class="inline-block text-zinc-100">Frame</span> at a
+                Time
+              </h2>
+              <p class="text-base text-zinc-300 md:text-lg">
+                I am Ethan Carter, a passionate photographer turning life's
+                fleeting moments into art. Whether it’s weddings, portraits, or
+                events, I aim to create images that tell your unique story.
+              </p>
+            </div>
+            <div>
+              <div class="flex -mx-2 items-center">
+                <a
+                  href="#contact"
+                  class="inline-block rounded bg-white px-6 pb-2 pt-2.5 text-xs font-medium leading-normal text-black shadow-light-3 transition duration-150 ease-in-out hover:bg-white/90 hover:shadow-light-2 focus:bg-white/90 focus:shadow-light-2 focus:outline-none focus:ring-0 active:bg-white/90 active:shadow-light-2 motion-reduce:transition-none"
+                >
+                  <i class="fa-solid fa-envelope mr-2"></i> Contact Me
+                </a>
+                <a
+                  href="#"
+                  class="mx-2 ml-4 text-white transition-colors duration-300 hover:text-zinc-500"
+                  aria-label="Instagram"
+                >
+                  <i class="fab fa-instagram w-5 h-5"></i>
+                </a>
+                <a
+                  href="#"
+                  class="mx-2 text-white transition-colors duration-300 hover:text-zinc-500"
+                  aria-label="Facebook"
+                >
+                  <i class="fab fa-facebook w-5 h-5"></i>
+                </a>
+                <a
+                  href="#"
+                  class="mx-2 text-white transition-colors duration-300 hover:text-zinc-500"
+                  aria-label="Github"
+                >
+                  <i class="fab fa-github w-5 h-5"></i>
+                </a>
+              </div>
+              <p
+                class="mb-4 mt-4 text-sm font-bold tracking-widest uppercase font-merri text-zinc-200"
+              >
+                What I Offer
+              </p>
+              <div class="grid space-y-3 sm:gap-2 sm:grid-cols-2 sm:space-y-0">
+                <ul class="space-y-3">
+                  <li class="flex items-center">
+                    <span class="mr-2">
+                      <i class="fa-solid fa-camera text-zinc-100"></i>
+                    </span>
+                    Artistic Wedding Photography
+                  </li>
+                  <li class="flex items-center">
+                    <span class="mr-2">
+                      <i class="fa-solid fa-users text-zinc-100"></i>
+                    </span>
+                    Authentic Portraits
+                  </li>
+                  <li class="flex items-center">
+                    <span class="mr-2">
+                      <i class="fa-solid fa-briefcase text-zinc-100"></i>
+                    </span>
+                    Dynamic Event Coverage
+                  </li>
+                </ul>
+                <ul class="space-y-3">
+                  <li class="flex items-center">
+                    <span class="mr-2">
+                      <i class="fa-solid fa-store text-zinc-100"></i>
+                    </span>
+                    Brand Photography
+                  </li>
+                  <li class="flex items-center">
+                    <span class="mr-2">
+                      <i class="fa-solid fa-palette text-zinc-100"></i>
+                    </span>
+                    Creative Commercial Shoots
+                  </li>
+                  <li class="flex items-center">
+                    <span class="mr-2">
+                      <i class="fa-solid fa-film text-zinc-100"></i>
+                    </span>
+                    Storytelling Through Images
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="flex items-center justify-center -mx-4 lg:pl-8">
+            <div class="flex flex-col items-end px-3">
+              <img
+                class="object-cover mb-6 rounded shadow-lg h-28 sm:h-48 xl:h-56 w-28 sm:w-48 xl:w-56"
+                src="https://images.pexels.com/photos/2738929/pexels-photo-2738929.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt="Wedding Photography"
+              />
+              <img
+                class="object-cover w-10 h-10 rounded shadow-lg sm:h-32 xl:h-40 sm:w-32 xl:w-40"
+                src="https://images.pexels.com/photos/1156546/pexels-photo-1156546.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt="Portrait Photography"
+              />
+            </div>
+            <div class="px-3">
+              <img
+                class="object-cover w-40 h-40 rounded shadow-lg sm:h-64 xl:h-80 sm:w-64 xl:w-80"
+                src="https://images.pexels.com/photos/1572878/pexels-photo-1572878.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt="Event Photography"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Site Content | Hero Section Ends -->
+    <!-- Site Content | About section -->
+    <section class="bg-black" id="about">
+      <div
+        class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20 bg-black"
+      >
+        <div
+          class="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12"
+        >
+          <div>
+            <p
+              class="inline-block px-3 py-px mb-4 text-base font-semibold tracking-wider text-zinc-300 uppercase rounded-full bg-zinc-700"
+            >
+              About Me
+            </p>
+          </div>
+          <h2
+            class="max-w-lg mb-6 font-sans text-5xl font-bold leading-none tracking-tight text-white sm:text-4xl md:mx-auto font-merri"
+          >
+            Capturing Stories<br />
+            One Moment at a Time
+          </h2>
+          <p class="text-base text-zinc-300 md:text-lg">
+            I’m Ethan Carter, a passionate photographer with over a decade of
+            experience capturing the beauty in life’s moments. My goal is to
+            create timeless images that not only freeze time but also tell the
+            unique stories of my clients. Whether it's weddings, portraits, or
+            commercial projects, I bring creativity and attention to every
+            detail.
+          </p>
+        </div>
+        <div class="grid max-w-screen-lg gap-8 lg:grid-cols-2 sm:mx-auto">
+          <div class="flex flex-col justify-center">
+            <div class="flex">
+              <div class="mr-4">
+                <div
+                  class="flex items-center justify-center w-10 h-10 mb-3 rounded-full bg-zinc-700"
+                >
+                  <i class="fas fa-camera text-white"></i>
+                </div>
+              </div>
+              <div>
+                <h6 class="mb-2 font-semibold leading-5 text-zinc-100 font-merri">
+                  Timeless Wedding Photography
+                </h6>
+                <p class="text-sm text-zinc-400">
+                  I specialize in capturing the most beautiful moments of your
+                  special day, from the big celebrations to the quiet, intimate
+                  moments.
+                </p>
+                <hr class="w-full my-6 border-zinc-600" />
+              </div>
+            </div>
+            <div class="flex">
+              <div class="mr-4">
+                <div
+                  class="flex items-center justify-center w-10 h-10 mb-3 rounded-full bg-zinc-700"
+                >
+                  <i class="fas fa-user text-white"></i>
+                </div>
+              </div>
+              <div>
+                <h6 class="mb-2 font-semibold leading-5 text-zinc-100 font-merri">
+                  Authentic Portraits
+                </h6>
+                <p class="text-sm text-zinc-400">
+                  I aim to bring out the personality and spirit of every
+                  individual I photograph, offering a comfortable and creative
+                  environment during every session.
+                </p>
+                <hr class="w-full my-6 border-zinc-600" />
+              </div>
+            </div>
+            <div class="flex">
+              <div class="mr-4">
+                <div
+                  class="flex items-center justify-center w-10 h-10 mb-3 rounded-full bg-zinc-700"
+                >
+                  <i class="fas fa-briefcase text-white"></i>
+                </div>
+              </div>
+              <div>
+                <h6 class="mb-2 font-semibold leading-5 text-zinc-100 font-merri">
+                  Creative Commercial Shoots
+                </h6>
+                <p class="text-sm text-zinc-400">
+                  From product photography to branding, I work with businesses
+                  to create visuals that speak to their audience, making brands
+                  stand out.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="grid grid-cols-2 gap-5">
+            <img
+              class="object-cover w-full h-56 col-span-2 rounded shadow-lg"
+              src="https://images.pexels.com/photos/3410386/pexels-photo-3410386.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              alt="Wedding Photography"
+            />
+            <img
+              class="object-cover w-full h-48 rounded shadow-lg"
+              src="https://images.pexels.com/photos/1913161/pexels-photo-1913161.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              alt="Portrait Photography"
+            />
+            <img
+              class="object-cover w-full h-48 rounded shadow-lg"
+              src="https://images.pexels.com/photos/1759448/pexels-photo-1759448.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              alt="Event Photography"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Site Content | About section Ends -->
+    <!-- Site Content | Services section  -->
+    <section class="bg-black" id="services">
+      <div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+        <div class="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
+          <div>
+            
+            <p
+            class="inline-block px-3 py-px mb-4 text-base font-semibold tracking-wider text-zinc-300 uppercase rounded-full bg-zinc-700"
+          >
+          Services
+          </p>
+          </div>
+          <h2 class="max-w-lg mb-6 font-sans text-4xl font-bold leading-none tracking-tight text-white sm:text-5xl md:mx-auto font-merri">
+            Bringing Your Moments to Life
+          </h2>
+          <p class="text-base text-zinc-300 md:text-lg">
+            Whether you're looking to capture a special day or need professional images for your brand, my services are designed to deliver stunning, timeless visuals. Explore what I offer below.
+          </p>
+        </div>
+        <div class="grid max-w-md gap-8 row-gap-10 sm:mx-auto lg:max-w-full lg:grid-cols-3">
+          <!-- Service 1: Wedding Photography -->
+          <div class="flex flex-col sm:flex-row">
+            <div class="sm:mr-4">
+              <div class="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-black">
+                
+                <img src="img/wedding.svg" alt="" class="w-12 h-12 text-zinc-400">
+              </div>
+            </div>
+            <div>
+              <h6 class="mb-2 font-semibold leading-5 text-zinc-100 font-merri">Wedding Photography</h6>
+              <p class="mb-3 text-sm text-zinc-300">
+                From the first look to the last dance, I capture the love, joy, and every special moment of your big day with artistic flair and attention to detail.
+              </p>
+              <ul class="mb-4 -ml-1 space-y-2">
+                <li class="flex items-start">
+                  <span class="mr-1">
+                    <i class="fas fa-check-circle w-5 h-5 mt-px text-zinc-400"></i>
+                  </span>
+                  Full-day Coverage
+                </li>
+                <li class="flex items-start">
+                  <span class="mr-1">
+                    <i class="fas fa-check-circle w-5 h-5 mt-px text-zinc-400"></i>
+                  </span>
+                  Pre-Wedding Shoots
+                </li>
+                <li class="flex items-start">
+                  <span class="mr-1">
+                    <i class="fas fa-check-circle w-5 h-5 mt-px text-zinc-400"></i>
+                  </span>
+                  Custom Albums
+                </li>
+              </ul>
+              <a href="#portfolio" class="inline-flex items-center font-semibold transition-colors duration-200 text-zinc-400 hover:text-zinc-600">
+                Learn more
+              </a>
+            </div>
+          </div>
+    
+          <!-- Service 2: Portrait Photography -->
+          <div class="flex flex-col sm:flex-row">
+            <div class="sm:mr-4">
+              <div class="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-black">
+                <img src="img/portrait.svg" alt="" class="w-12 h-12 text-zinc-400">
+
+              </div>
+            </div>
+            <div>
+              <h6 class="mb-2 font-semibold leading-5 text-zinc-100 font-merri">Portrait Photography</h6>
+              <p class="mb-3 text-sm text-zinc-300">
+                Capturing your true essence, whether it's for personal branding, family portraits, or professional headshots. I aim to bring out the best in you with a relaxed, creative approach.
+              </p>
+              <ul class="mb-4 -ml-1 space-y-2">
+                <li class="flex items-start">
+                  <span class="mr-1">
+                    <i class="fas fa-check-circle w-5 h-5 mt-px text-zinc-400"></i>
+                  </span>
+                  Studio & Outdoor Sessions
+                </li>
+                <li class="flex items-start">
+                  <span class="mr-1">
+                    <i class="fas fa-check-circle w-5 h-5 mt-px text-zinc-400"></i>
+                  </span>
+                  Creative Direction
+                </li>
+                <li class="flex items-start">
+                  <span class="mr-1">
+                    <i class="fas fa-check-circle w-5 h-5 mt-px text-zinc-400"></i>
+                  </span>
+                  High-Quality Retouching
+                </li>
+              </ul>
+              <a href="#portfolio" class="inline-flex items-center font-semibold transition-colors duration-200 text-zinc-400 hover:text-zinc-600">
+                Learn more
+              </a>
+            </div>
+          </div>
+    
+          <!-- Service 3: Commercial Photography -->
+          <div class="flex flex-col sm:flex-row">
+            <div class="sm:mr-4">
+              <div class="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-black">
+                <img src="img/commercial.svg" alt="" class="w-12 h-12 text-zinc-400">
+
+              </div>
+            </div>
+            <div>
+              <h6 class="mb-2 font-semibold leading-5 text-zinc-100 font-merri">Commercial Photography</h6>
+              <p class="mb-3 text-sm text-zinc-300">
+                High-quality, visually stunning imagery for businesses, brands, and entrepreneurs. Let’s work together to bring your products and services to life through powerful visuals.
+              </p>
+              <ul class="mb-4 -ml-1 space-y-2">
+                <li class="flex items-start">
+                  <span class="mr-1">
+                    <i class="fas fa-check-circle w-5 h-5 mt-px text-zinc-400"></i>
+                  </span>
+                  Product Photography
+                </li>
+                <li class="flex items-start">
+                  <span class="mr-1">
+                    <i class="fas fa-check-circle w-5 h-5 mt-px text-zinc-400"></i>
+                  </span>
+                  Branding Sessions
+                </li>
+                <li class="flex items-start">
+                  <span class="mr-1">
+                    <i class="fas fa-check-circle w-5 h-5 mt-px text-zinc-400"></i>
+                  </span>
+                  Marketing Campaigns
+                </li>
+              </ul>
+              <a href="#portfolio" class="inline-flex items-center font-semibold transition-colors duration-200 text-zinc-400 hover:text-zinc-600">
+                Learn more
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    
+    
+    <!-- Site Content | Services section  Ends -->
+    <!-- Site Content | Portfolio section  -->
+    <section class="bg-black" id="portfolio">
+      <div class="py-6 sm:py-8 lg:py-12">
+        <div class="mx-auto max-w-screen-2xl px-4 md:px-8">
+          <!-- text - start -->
+          <div class="mb-10 md:mb-16">
+            <h2 class="mb-4 text-center text-4xl font-bold text-zinc-100 md:mb-6 lg:text-5xl">Portfolio</h2>
+            <p class="mx-auto max-w-screen-md text-center text-zinc-300 md:text-base">
+              A curated collection of my work across weddings, portraits, events, and commercial projects. Each photograph captures the essence of a story, framed through my lens.
+            </p>
+          </div>
+          <!-- text - end -->  
+    
+          <div class="grid grid-cols-2 gap-4 sm:grid-cols-3 md:gap-6 xl:gap-8">
+            <!-- Wedding Photography - start -->
+            <a href="#" class="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80">
+              <img src="https://images.pexels.com/photos/262218/pexels-photo-262218.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" loading="lazy" alt="Wedding Photography" class="absolute inset-0 h-full w-full object-cover object-center grayscale transition duration-200 group-hover:scale-110" />
+              <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50"></div>
+              <span class="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">Wedding Moments</span>
+            </a>
+            <!-- Wedding Photography - end -->
+    
+            <!-- Portrait Photography - start -->
+            <a href="#" class="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:col-span-2 md:h-80">
+              <img src="https://images.pexels.com/photos/377058/pexels-photo-377058.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" loading="lazy" alt="Portrait Photography" class="absolute inset-0 h-full w-full object-cover object-center grayscale transition duration-200 group-hover:scale-110" />
+              <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50"></div>
+              <span class="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">Authentic Portraits</span>
+            </a>
+            <!-- Portrait Photography - end -->
+    
+            <!-- Event Photography - start -->
+            <a href="#" class="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:col-span-2 md:h-80">
+              <img src="https://images.pexels.com/photos/169190/pexels-photo-169190.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" loading="lazy" alt="Event Photography" class="absolute inset-0 h-full w-full object-cover object-center grayscale transition duration-200 group-hover:scale-110" />
+              <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50"></div>
+              <span class="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">Event Highlights</span>
+            </a>
+            <!-- Event Photography - end -->
+    
+            <!-- Commercial Photography - start -->
+            <a href="#" class="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80">
+              <img src="https://images.pexels.com/photos/247318/pexels-photo-247318.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" loading="lazy" alt="Commercial Photography" class="absolute inset-0 h-full w-full object-cover object-center grayscale transition duration-200 group-hover:scale-110" />
+              <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50"></div>
+              <span class="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">Brand Stories</span>
+            </a>
+            <!-- Commercial Photography - end -->
+          </div>
+    
+          <div class="my-8 grid grid-cols-2 gap-4 sm:grid-cols-3 md:mb-8 md:grid-cols-4 md:gap-6 xl:gap-8">
+            <!-- Additional Wedding Photography - start -->
+            <a href="#" class="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80">
+              <img src="https://images.pexels.com/photos/265757/pexels-photo-265757.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" loading="lazy" alt="Wedding Photography" class="absolute inset-0 h-full w-full object-cover object-center grayscale transition duration-200 group-hover:scale-110" />
+              <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50"></div>
+              <span class="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">Unforgettable Weddings</span>
+            </a>
+            <!-- Additional Wedding Photography - end -->
+    
+            <!-- Additional Portrait Photography - start -->
+            <a href="#" class="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80">
+              <img src="https://images.pexels.com/photos/1884583/pexels-photo-1884583.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" loading="lazy" alt="Portrait Photography" class="absolute inset-0 h-full w-full object-cover object-center grayscale transition duration-200 group-hover:scale-110" />
+              <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50"></div>
+              <span class="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">Timeless Portraits</span>
+            </a>
+            <!-- Additional Portrait Photography - end -->
+    
+            <!-- Additional Event Photography - start -->
+            <a href="#" class="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80">
+              <img src="https://images.pexels.com/photos/227721/pexels-photo-227721.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" loading="lazy" alt="Event Photography" class="absolute inset-0 h-full w-full object-cover object-center grayscale transition duration-200 group-hover:scale-110" />
+              <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50"></div>
+              <span class="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">Event Memories</span>
+            </a>
+            <!-- Additional Event Photography - end -->
+    
+            <!-- Additional Commercial Photography - start -->
+            <a href="#" class="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80">
+              <img src="https://images.pexels.com/photos/953214/pexels-photo-953214.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" loading="lazy" alt="Commercial Photography" class="absolute inset-0 h-full w-full object-cover object-center grayscale transition duration-200 group-hover:scale-110" />
+              <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50"></div>
+              <span class="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">Branding Highlights</span>
+            </a>
+            <!-- Additional Commercial Photography - end -->
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    
+    <!-- Site Content | Portfolio section Ends -->
+    <!-- Site Content | Client & Testimonial section  -->
+
+     
+
+    <section class="bg-black" id="clients">
+      <div class="px-5 py-24 mx-auto lg:px-16">
+        <div class="flex flex-col w-full mb-8 text-center">
+          <span class="mb-4 text-sm font-medium tracking-wide text-zinc-400 uppercase">
+            Trusted by clients who value timeless photography.
+          </span>
+        </div>
+        <div class="mx-auto text-center">
+          <div class="grid grid-cols-5 gap-4 mx-auto lg:grid-cols-5">
+            <div>
+              <img class="h-8 mx-auto lg:h-32" src="img/Cocacola.svg" alt="Cocacola">
+            </div>
+            <div>
+              <img class="h-8 mx-auto lg:h-32" src="img/Nikon.svg" alt="Nikon">
+            </div>
+            <div>
+              <img class="h-8 mx-auto lg:h-32" src="img/Fujifilm.svg" alt="Fujifilm">
+            </div>
+            <div>
+              <img class="h-8 mx-auto lg:h-28" src="img/Adobelightroom.svg" alt="Adobe Lightroom">
+            </div>
+            <div>
+              <img class="h-8 mx-auto lg:h-32" src="img/Sony.svg" alt="Sony Alpha">
+            </div>
+          </div>
+        </div>
+      </div>
+      
+  
+      <div class="relative items-center w-full px-5 py-12 mx-auto md:px-12 lg:px-24 max-w-7xl">
+          <div class="grid grid-cols-1 gap-6 lg:grid-cols-3">
+              <!-- Testimonial 1 -->
+              <div class="flex flex-col w-full max-w-lg p-8 text-left shadow-2xl lg:mx-auto rounded-xl bg-zinc-900">
+                  <p class="mx-auto text-base leading-relaxed text-zinc-300">
+                      "Ethan's ability to capture the raw emotions of our wedding day was incredible. Every photo tells a story, and we couldn’t be happier with the results. Highly recommended!"
+                  </p>
+                  <h2 class="mt-4 text-xs font-semibold tracking-widest text-gray-500 uppercase">
+                      Sarah & Jake
+                      <span class="font-semibold text-zinc-100 lg:mb-0">Wedding Clients</span>
+                  </h2>
+                  <img alt="testimonial" class="inline-block object-cover object-center w-10 h-10 mt-8 rounded-full" src="https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500">
+              </div>
+  
+              <!-- Testimonial 2 -->
+              <div class="flex flex-col w-full max-w-lg p-8 text-left shadow-2xl lg:mx-auto rounded-xl bg-zinc-900">
+                  <p class="mx-auto text-base leading-relaxed text-zinc-300">
+                      "Working with Ethan for our company's commercial photoshoot was a game changer. His creative vision brought our brand to life, and the images have been a huge success."
+                  </p>
+                  <h2 class="mt-4 text-xs font-semibold tracking-widest text-gray-500 uppercase">
+                      Amanda Lee
+                      <span class="font-semibold text-zinc-100 lg:mb-0">Brand Manager, Nike</span>
+                  </h2>
+                  <img alt="testimonial" class="inline-block object-cover object-center w-10 h-10 mt-8 rounded-full" src="https://images.pexels.com/photos/712513/pexels-photo-712513.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500">
+              </div>
+  
+              <!-- Testimonial 3 -->
+              <div class="flex flex-col w-full max-w-lg p-8 text-left shadow-2xl lg:mx-auto rounded-xl bg-zinc-900">
+                  <p class="mx-auto text-base leading-relaxed text-zinc-300">
+                      "Ethan made our family portrait session such a comfortable experience. The pictures turned out amazing, and everyone who sees them can’t stop complimenting the quality."
+                  </p>
+                  <h2 class="mt-4 text-xs font-semibold tracking-widest text-gray-500 uppercase">
+                      Johnson Family
+                      <span class="font-semibold text-zinc-100 lg:mb-0">Portrait Clients</span>
+                  </h2>
+                  <img alt="testimonial" class="inline-block object-cover object-center w-10 h-10 mt-8 rounded-full" src="https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500">
+              </div>
+  
+              <!-- Testimonial 4 -->
+              <div class="flex flex-col w-full max-w-lg p-8 text-left shadow-2xl lg:mx-auto rounded-xl bg-zinc-900">
+                  <p class="mx-auto text-base leading-relaxed text-zinc-300">
+                      "Ethan's attention to detail during our corporate event was impressive. He captured every key moment while remaining unobtrusive, and the final images were perfect for our marketing campaign."
+                  </p>
+                  <h2 class="mt-4 text-xs font-semibold tracking-widest text-gray-500 uppercase">
+                      Michael Stevens
+                      <span class="font-semibold text-zinc-100 lg:mb-0">Marketing Director, Google</span>
+                  </h2>
+                  <img alt="testimonial" class="inline-block object-cover object-center w-10 h-10 mt-8 rounded-full" src="https://images.pexels.com/photos/2284170/pexels-photo-2284170.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500">
+              </div>
+  
+              <!-- Testimonial 5 -->
+              <div class="flex flex-col w-full max-w-lg p-8 text-left shadow-2xl lg:mx-auto rounded-xl bg-zinc-900">
+                  <p class="mx-auto text-base leading-relaxed text-zinc-300">
+                      "Our engagement photoshoot with Ethan was more than we could have hoped for. His ability to make us feel relaxed and natural in front of the camera resulted in photos we will treasure forever."
+                  </p>
+                  <h2 class="mt-4 text-xs font-semibold tracking-widest text-gray-500 uppercase">
+                      Emily & John
+                      <span class="font-semibold text-zinc-100 lg:mb-0">Engagement Clients</span>
+                  </h2>
+                  <img alt="testimonial" class="inline-block object-cover object-center w-10 h-10 mt-8 rounded-full" src="https://images.pexels.com/photos/1766604/pexels-photo-1766604.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500">
+              </div>
+          </div>
+      </div>
+  </section>
+  
+  
+    <!-- Site Content | Client & Testimonial section Ends -->
+    <!-- Site Content | Contact section  -->
+    <section class="bg-black" id="contact">
+      <div class="relative items-center w-full px-5 py-12 mx-auto md:px-12 lg:px-24 max-w-7xl">
+          <div>
+              <p class="font-medium text-zinc-400">Contact us</p>
+  
+              <h1 class="mt-2 text-5xl font-bold text-white">Get in touch</h1>
+  
+              <p class="mt-3 text-base text-zinc-300">Our friendly team is always here to chat.</p>
+          </div>
+  
+          <div class="grid grid-cols-1 gap-12 mt-10 md:grid-cols-2 lg:grid-cols-3">
+              <div>
+                  <span class="inline-block p-3 text-zinc-400 rounded-full bg-zinc-800">
+                      
+                      <img src="img/Letter-Unread.svg" alt="" class="w-6 h-6">
+                  </span>
+  
+                  <h2 class="mt-4 text-4xl font-bold text-zinc-100">Email</h2>
+                  <p class="mt-2 text-base text-zinc-300">Our friendly team is here to help.</p>
+                  <p class="mt-2 text-sm text-zinc-400">hello@merakiui.com</p>
+              </div>
+  
+              <div>
+                  <span class="inline-block p-3 text-zinc-400 rounded-full bg-zinc-800">
+                    <img src="img/Point-On-Map.svg" alt="" class="w-6 h-6">
+
+                  </span>
+  
+                  <h2 class="mt-4 text-4xl font-bold text-zinc-100">Office</h2>
+                  <p class="mt-2 text-base text-zinc-300">Come say hello at our office HQ.</p>
+                  <p class="mt-2 text-sm text-zinc-400">100 Smith Street Collingwood VIC 3066 AU</p>
+              </div>
+  
+              <div>
+                  <span class="inline-block p-3 text-zinc-400 rounded-full bg-zinc-800">
+                    <img src="img/Outgoing-Call.svg" alt="" class="w-6 h-6">
+
+                  </span>
+  
+                  <h2 class="mt-4 text-4xl font-bold text-zinc-100">Phone</h2>
+                  <p class="mt-2 text-base text-zinc-300">Mon-Fri from 8am to 5pm.</p>
+                  <p class="mt-2 text-sm text-zinc-400">+1 (555) 000-0000</p>
+              </div>
+          </div>
+      </div>
+  </section>
+  
+    <!-- Site Content | Contact section Ends -->
+    <!-- Site Content | Footer section  -->
+    <footer class="bg-black text-white dark:bg-gray-900 dark:text-gray-300">
+      <div
+        class="container flex flex-col items-center justify-between p-6 mx-auto space-y-4 sm:space-y-0 sm:flex-row"
+      >
+        <a href="#">
+          <img class="w-auto h-12 sm:h-12" src="img/logo.svg" alt="" />
+        </a>
+        <p class="text-sm text-gray-500">
+          © Copyright 2024. All Rights Reserved.
+        </p>
+        <div class="flex -mx-2">
+          <a
+            href="#"
+            class="mx-2 text-white transition-colors duration-300 hover:text-zinc-500"
+            aria-label="Reddit"
+          >
+            <i class="fab fa-reddit w-5 h-5"></i>
+          </a>
+          <a
+            href="#"
+            class="mx-2 text-white transition-colors duration-300 hover:text-zinc-500"
+            aria-label="Facebook"
+          >
+            <i class="fab fa-facebook w-5 h-5"></i>
+          </a>
+          <a
+            href="#"
+            class="mx-2 text-white transition-colors duration-300 hover:text-zinc-500"
+            aria-label="Github"
+          >
+            <i class="fab fa-github w-5 h-5"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+    <!-- Site Content | Footer section Ends -->
+    <!-- Theme Toggle Script -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const menuButton = document.querySelector(
+          '[data-collapse-toggle="mobile-menu-2"]'
+        );
+        const mobileMenu = document.getElementById("mobile-menu-2");
+        const openMenuIcon = document.getElementById("open-menu");
+        const closeMenuIcon = document.getElementById("close-menu");
+        // Initially hide the close icon
+        closeMenuIcon.style.display = "none";
+        menuButton.addEventListener("click", function () {
+          // Toggle menu visibility
+          mobileMenu.classList.toggle("hidden");
+          // Toggle icons between open and close
+          if (mobileMenu.classList.contains("hidden")) {
+            openMenuIcon.style.display = "block";
+            closeMenuIcon.style.display = "none";
+          } else {
+            openMenuIcon.style.display = "none";
+            closeMenuIcon.style.display = "block";
+          }
+        });
+      });
+    </script>
+    <!-- TW Elements JS Script -->
+    <script src="https://cdn.jsdelivr.net/npm/tw-elements/js/tw-elements.umd.min.js"></script>
+    <!-- Font Awesome JS Script -->
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
